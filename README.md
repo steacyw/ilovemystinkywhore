@@ -1,2 +1,2 @@
-# steacyw.github.io
+# ilovemystinkywhore.com
 a website for my (now ex) girlfriend

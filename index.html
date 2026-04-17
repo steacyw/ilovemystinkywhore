@@ -57,11 +57,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .vidDiv video {
-  max-height: 100%;  /* video fills the div but never overflows it */
-  max-width: 100%;
+  height: 100%;      /* fill the div's height exactly */
+  width: auto;       /* let width follow the video's aspect ratio */
+  max-width: 100%;   /* but never wider than the div */
+  display: block;
 }
 
 </style>

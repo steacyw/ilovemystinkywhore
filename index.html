@@ -63,13 +63,15 @@ p {
 
 /* ── Mobile: shrink to 90% of the viewport ── */
 @media (max-width: 768px) {
-  html {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
   body {
     height: 90vh;
+    align-items: flex-start;
+  }
+  .text {
+  flex: 0 0 9vh;
+  }
+  .vidDiv {
+  flex: 0 0 72vh;
   }
 }
 

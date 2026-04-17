@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
-/* Make html and body fill the viewport exactly, no scrolling */
 html, body {
   height: 100vh;
   margin: 0;
@@ -16,7 +15,7 @@ html, body {
 
 body {
   background-color: #94ffda;
-  display: flex;           /* stack children vertically */
+  display: flex;
   flex-direction: column;
 }
 
@@ -25,35 +24,27 @@ h1 {
   font-size: clamp(20px, 6vw, 80px);
   color: #ff4646;
   text-shadow: 0px 0px 3px white;
-  margin: 0; /* prevent h1's default margin adding extra height */
+  margin: 0;
 }
 
 p {
   font-family: times new roman, sans serif;
   font-size: clamp(10px, 3vw, 30px);
-  margin: 0; /* prevent p's default margin adding extra height */
-}
-
-/* Spacers are collapsed — no room for them in a 10/80/10 split */
-.spacer, .spacerLong {
-  display: none;
+  margin: 0;
 }
 
 .text {
-  flex: 0 0 10vh;      /* fixed 10% of viewport height, won't grow or shrink */
+  flex: 0 0 10vh;
   display: flex;
-  align-items: center; /* vertically centre content within the 10vh */
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
 
 .vidDiv {
-  flex: 0 0 80vh;      /* fixed 80% of viewport height */
+  flex: 0 0 80vh;
   background-color: #94ffda;
   text-align: center;
-  padding: 10px;
-  box-sizing: border-box; /* padding is included within the 80vh, not added on top */
-  box-shadow: 1px 1px 5px #8d7881 inset;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,6 +56,9 @@ p {
   width: auto;       /* let width follow the video's aspect ratio */
   max-width: 100%;   /* but never wider than the div */
   display: block;
+  padding: 10px;
+  box-sizing: border-box; /* padding is included within the 80vh, not added on top */
+  box-shadow: 1px 1px 5px #8d7881 inset;
 }
 
 </style>

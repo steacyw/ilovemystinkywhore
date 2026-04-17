@@ -1,2 +1,2 @@
-# ilovemystinkywhore.com
-a website for my (now ex) girlfriend
+# stinkywhore.com
+a website for stinky Wh. all over the world

@@ -52,17 +52,17 @@ p {
 }
 
 .vidDiv video {
-  height: 100%;      /* fill the div's height exactly */
-  width: auto;       /* let width follow the video's aspect ratio */
-  max-width: 100%;   /* but never wider than the div */
+  height: 100%;      /* fill div height 100 */
+  width: auto;
+  max-width: 100%;   /* never wider than the div */
   display: block;
   padding: 10px;
   box-sizing: border-box; /* padding is included within the 80vh, not added on top */
   box-shadow: 1px 1px 5px #8d7881 inset;
-    filter: brightness(150%);
+  filter: brightness(150%); /* make video brighter, duh!!! */
 }
 
-/* ── Mobile: shrink to 90% of the viewport ── */
+/* ── on mobile phone screens: shrink the whole site to 90% of the viewport, thanks ── */
 @media (max-width: 768px) {
   body {
     height: 95vh;
